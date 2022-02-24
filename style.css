@@ -2,4 +2,77 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: sans-serif;
 }
+
+.center-wrap {
+    margin: 50px auto 0 auto;
+}
+
+.card {
+    width: 800px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 250px 1fr;
+}
+
+
+
+.card_left {
+    background-color: #807182;
+}
+
+
+.card_right {
+    background-color: #f9c7c2;
+    display: grid;
+    grid-template-rows: 100px auto 60px;
+}
+
+.card_title {
+    display: grid;
+    place-items: center;
+    padding-top: 20px;
+}
+
+form {
+    display: grid;
+    grid-template: 
+            "a a" 1fr
+            "a a" 1fr
+            "a a" 1fr
+            "weight weight" 1fr / 
+            1fr 1fr;
+    margin: 20px;
+}
+
+.weight {
+    grid-area: weight;
+}
+
+.question {
+    padding: 20px;
+}
+
+.card_bottom {
+    background-color: white;
+    display: grid;  
+}
+
+.card_bottom a {
+    border-radius: 50px;
+    padding: 10px 30px;
+    text-decoration: none;
+}
+
+.card_bottom .back {
+    background-color: white;
+    border: #807182 1px solid;
+    color: #807182;
+}
+
+.card_bottom .next {
+    background-color: #807182;
+    color: white;
+}
+

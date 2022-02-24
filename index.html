@@ -7,72 +7,106 @@
     <link rel="stylesheet" href="style.css" />
     <title>Stylish Form</title>
   </head>
-  <body>
-    <h1>Pupscare. We are about pups.</h1>
 
-    <label for="name">Name</label>
-    <input
-      type="text"
-      id="name"
-      name="name"
-      required
-      placeholder="Pet's name"
-    />
+  <body class="container">
 
-  
-    <label for="breed">Breed</label>
-    <select name="breed" id="breed">
-      <option value="">Choose a breed</option>
-      <option value="lab_ret">Labrador Retriever</option>
-      <option value="cockapoo">Cockapoo</option>
-      <option value="spr_spa">Springer Spaniel</option>
-      <option value="j_russ">Jack Russell</option>
-      <option value="ger_she">German Shepherd</option>
-    </select>
+    <div class="card center-wrap">
+      <section class="card_left">
+        
+      </section>
 
-    <p>Gender</p>
+      <section class="card_right">
+        <div class="card_title">
+          <h1>Pupscare. We are about pups.</h1>
+        </div>
 
-    <label for="male">Male</label>
-    <input type="radio" id="male" name="breed" value="male" />
+          <form>
+          <div class="name border question">
+            <label for="name">Name</label><br>
+            <input type="text" id="name" name="name" required placeholder="Pet's name"
+            />
+          </div>
 
-    <label for="female">Female</label>
-    <input type="radio" id="female" name="breed" value="female" />
+          <div class="breed border question">
+            <label for="breed">Breed</label><br>
+            <select name="breed" id="breed">
+              <option value="">Choose a breed</option>
+              <option value="lab_ret">Labrador Retriever</option>
+              <option value="cockapoo">Cockapoo</option>
+              <option value="spr_spa">Springer Spaniel</option>
+              <option value="j_russ">Jack Russell</option>
+              <option value="ger_she">German Shepherd</option>
+            </select>
+          </div>
 
-    
-    <label for="photo">Upload a photo</label>
-    <input type="file" id="photo" name="photo" accept="image/png, image/jpeg">
+          <div class="gender border question">
+          <p>Gender</p><br>
 
-    <label for="b_day">Birthday</label>
-    <input type="date" id="b_day" name="birthday">
+          <label for="male">Male</label>
+          <input type="radio" id="male" name="breed" value="male" />
 
-    <p>Spayed or Neutered</p>
+          <label for="female">Female</label>
+          <input type="radio" id="female" name="breed" value="female" />
 
-    <label for="spayed">Spayed</label>
-    <input type="radio" id="spayed" name="S/N" value="spayed" />
+           </div>
 
-    <label for="neutered">Neutered</label>
-    <input type="radio" id="neutered" name="S/N" value="neutered" />
-    
-    <p>Weight</p>
+           <div class="border photo question">
 
-    <label for="0-10">0-10kg</label>
-    <input type="radio" id="0-10" name="weight" value="0-10" />
+          <label for="photo">Upload a photo</label>
+          <input type="file" id="photo" name="photo" accept="image/png, image/jpeg">
 
-    <label for="10-20">10-20kg</label>
-    <input type="radio" id="10-20" name="weight" value="10-20" />
+        </div>
 
-    <label for="20-50">20-50kg</label>
-    <input type="radio" id="20-50" name="weight" value="20-50" />
+        <div class="border birthday question">
+          <label for="b_day">Birthday</label><br>
+          <input type="date" id="b_day" name="birthday">
 
-    <label for="50+">50+ kg</label>
-    <input type="radio" id="50+" name="weight" value="50+" />
+        </div>
 
-    
-    <a href="_blank">Back</a>
-    <a href="_blank">Next</a>
+        <div class="border status question">
+          <p>Spayed or Neutered</p><br>
+
+          <label for="spayed">Spayed</label>
+          <input type="radio" id="spayed" name="S/N" value="spayed" />
+
+          <label for="neutered">Neutered</label>
+          <input type="radio" id="neutered" name="S/N" value="neutered" />
+        </div>
+
+        <div class="border weight question">
+          <p>Weight</p><br>
+
+          <label for="0-10">0-10kg</label>
+          <input type="radio" id="0-10" name="weight" value="0-10" />
+
+          <label for="10-20">10-20kg</label>
+          <input type="radio" id="10-20" name="weight" value="10-20" />
+
+          <label for="20-50">20-50kg</label>
+          <input type="radio" id="20-50" name="weight" value="20-50" />
+
+          <label for="50+">50+ kg</label>
+          <input type="radio" id="50+" name="weight" value="50+" />
+
+        </div>
+
+        </form>
+
+       <div class="card_bottom border">
+          <a href="_blank" class="back">Back</a>
+          <a href="_blank" class="next">Next</a>
+        </div>
 
 
 
+
+
+
+
+      </section>
+
+
+    </div>
 
 
   </body>
