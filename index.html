@@ -5,9 +5,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="style.css" />
-    <title>Full Stack Portfolio</title>
+    <title>Stylish Form</title>
   </head>
   <body>
+    <h1>Pupscare. We are about pups.</h1>
+
+    <label for="name">Name</label>
+    <input
+      type="text"
+      id="name"
+      name="name"
+      required
+      placeholder="Pet's name"
+    />
+
+  
+    <label for="breed">Breed</label>
+    <select name="breed" id="breed">
+      <option value="">Choose a breed</option>
+      <option value="lab_ret">Labrador Retriever</option>
+      <option value="cockapoo">Cockapoo</option>
+      <option value="spr_spa">Springer Spaniel</option>
+      <option value="j_russ">Jack Russell</option>
+      <option value="ger_she">German Shepherd</option>
+    </select>
+
+    <p>Gender</p>
+
+    <label for="male">Male</label>
+    <input type="radio" id="male" name="breed" value="male" />
+
+    <label for="female">Female</label>
+    <input type="radio" id="female" name="breed" value="female" />
+
+    
+    <label for="photo">Upload a photo</label>
+    <input type="file" id="photo" name="photo" accept="image/png, image/jpeg">
+
+    <label for="b_day">Birthday</label>
+    <input type="date" id="b_day" name="birthday">
+
+    <p>Spayed or Neutered</p>
+
+    <label for="spayed">Spayed</label>
+    <input type="radio" id="spayed" name="S/N" value="spayed" />
+
+    <label for="neutered">Neutered</label>
+    <input type="radio" id="neutered" name="S/N" value="neutered" />
+    
+    <p>Weight</p>
+
+    <label for="0-10">0-10kg</label>
+    <input type="radio" id="0-10" name="weight" value="0-10" />
+
+    <label for="10-20">10-20kg</label>
+    <input type="radio" id="10-20" name="weight" value="10-20" />
+
+    <label for="20-50">20-50kg</label>
+    <input type="radio" id="20-50" name="weight" value="20-50" />
+
+    <label for="50+">50+ kg</label>
+    <input type="radio" id="50+" name="weight" value="50+" />
+
+    
+    <a href="_blank">Back</a>
+    <a href="_blank">Next</a>
+
+
+
+
 
   </body>
 </html>
