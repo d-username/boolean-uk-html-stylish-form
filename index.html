@@ -1,113 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Stylish Form</title>
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>stylish form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="container">
+  <div class="card">
+    <h1>Say Hello!</h1>
+    <form>
 
-  <body class="container">
+      <div class="name question">
+        <label for="name"><h2>Your Name</h2></label><br>
+        <input class="input_box" type="text" id="name" name="name" required placeholder="Enter your name">
+      </div>
 
-    <div class="card center-wrap">
-      <section class="card_left">
-        
-      </section>
+      <div class="email question">
+        <label for="email"><h2>Email</h2></label><br>
+        <input class="input_box" type="email" id="email" name="email" required placeholder="Enter your email address">
+      </div>
 
-      <section class="card_right">
-        <div class="card_title">
-          <h1>Pupscare. We are about pups.</h1>
-        </div>
+      <div class="service question">
+        <label for="service"><h2>Needed Services</h2></label>
+        <select class="input_box select_font" name="service" id="service">
+            <option value="" class="font_lg">Choose services</option>
+            <option value="ser1">Service 1</option>
+            <option value="ser2">Service 2</option>
+            <option value="ser3">Service 3</option>
+        </select>
+      </div>
 
-          <form>
-          <div class="name border question">
-            <label for="name">Name</label><br>
-            <input type="text" id="name" name="name" required placeholder="Pet's name"
-            />
-          </div>
+      <div class="budget question">
+        <label for="budget"><h2>Budget</h2></label>
+        <select class="input_box select_font" name="budget" id="budget">
+            <option value="" class="font_lg">Select budget</option>
+            <option value="bud1">Budget 1</option>
+            <option value="bud2">Budget 2</option>
+            <option value="bud3">Budget 3</option>
+        </select>
+      </div>
 
-          <div class="breed border question">
-            <label for="breed">Breed</label><br>
-            <select name="breed" id="breed">
-              <option value="">Choose a breed</option>
-              <option value="lab_ret">Labrador Retriever</option>
-              <option value="cockapoo">Cockapoo</option>
-              <option value="spr_spa">Springer Spaniel</option>
-              <option value="j_russ">Jack Russell</option>
-              <option value="ger_she">German Shepherd</option>
-            </select>
-          </div>
+      <div class="message">
+        <label for="message"><h2>Message</h2></label><br>
+        <textarea class="input_box" type="text" name="message" id="message">Your message here...</textarea>
+      </div>
 
-          <div class="gender border question">
-          <p>Gender</p><br>
+      <input type="submit" value="Submit →" class="submit">
 
-          <label for="male">Male</label>
-          <input type="radio" id="male" name="breed" value="male" />
-
-          <label for="female">Female</label>
-          <input type="radio" id="female" name="breed" value="female" />
-
-           </div>
-
-           <div class="border photo question">
-
-          <label for="photo">Upload a photo</label>
-          <input type="file" id="photo" name="photo" accept="image/png, image/jpeg">
-
-        </div>
-
-        <div class="border birthday question">
-          <label for="b_day">Birthday</label><br>
-          <input type="date" id="b_day" name="birthday">
-
-        </div>
-
-        <div class="border status question">
-          <p>Spayed or Neutered</p><br>
-
-          <label for="spayed">Spayed</label>
-          <input type="radio" id="spayed" name="S/N" value="spayed" />
-
-          <label for="neutered">Neutered</label>
-          <input type="radio" id="neutered" name="S/N" value="neutered" />
-        </div>
-
-        <div class="border weight question">
-          <p>Weight</p><br>
-
-          <label for="0-10">0-10kg</label>
-          <input type="radio" id="0-10" name="weight" value="0-10" />
-
-          <label for="10-20">10-20kg</label>
-          <input type="radio" id="10-20" name="weight" value="10-20" />
-
-          <label for="20-50">20-50kg</label>
-          <input type="radio" id="20-50" name="weight" value="20-50" />
-
-          <label for="50+">50+ kg</label>
-          <input type="radio" id="50+" name="weight" value="50+" />
-
-        </div>
-
-        </form>
-
-       <div class="card_bottom border">
-          <a href="_blank" class="back">Back</a>
-          <a href="_blank" class="next">Next</a>
-        </div>
+    </form>
 
 
 
-
-
-
-
-      </section>
-
-
-    </div>
-
-
-  </body>
+  </div>
+</body>
 </html>
